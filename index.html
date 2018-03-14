@@ -1,0 +1,182 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cheracher Mehdi</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" href="css/cv.css">
+  <style>
+    .loader {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      border: 4px solid #Fff;
+      top: 50%;
+      animation: loader 2s infinite ease;
+    }
+
+    .loader-inner {
+      vertical-align: top;
+      display: inline-block;
+      width: 100%;
+      background-color: #fff;
+      animation: loader-inner 2s infinite ease-in;
+    }
+
+    @keyframes loader {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      25% {
+        transform: rotate(180deg);
+      }
+
+      50% {
+        transform: rotate(180deg);
+      }
+
+      75% {
+        transform: rotate(360deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes loader-inner {
+      0% {
+        height: 0%;
+      }
+
+      25% {
+        height: 0%;
+      }
+
+      50% {
+        height: 100%;
+      }
+
+      75% {
+        height: 100%;
+      }
+
+      100% {
+        height: 0%;
+      }
+    }
+    .loader-wrapper {
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #E64A19;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="loadder" class="loader-wrapper">
+      <span class="loader">
+          <span class="loader-inner">
+          </span>
+        </span>
+  </div>
+  
+  <div class="container">
+    <div class="first-col">
+      <div class="my-info default-primary-color text-primary-color">
+        <div class="full-name">Cheracher Mehdi</div>
+        <div class="current-position">Student</div>
+      </div>
+      <div class="menu accent-color">
+        <div class="menu-container">
+          <div class="menu-item active" data-target="profile">
+            <a href="#">Profile</a>
+          </div>
+          <div class="menu-item" data-target="education">
+            <a href="#">Education</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Technology</a>
+          </div>
+          <div class="menu-item">
+            <a href="#">Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second-col">
+      <div id="profile" class="navigable profile card showing">
+        <div class="full-name">Cheracher Mehdi</div>
+        <div class="content-container">
+          <div class="img-container">
+            <div id="profile-picture"></div>
+          </div>
+          <div class="bio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente est beatae voluptatibus similique nihil quasi
+              itaque expedita quod, culpa alias earum. Autem illum perferendis sapiente laudantium distinctio, molestias
+              nisi totam.</p>
+          </div>
+          <div class="personal-information">
+            <div class="table-row">
+              <div class="left-cell">Email :</div>
+              <div class="right-cell">mehdi.cheracher@gmail.com</div>
+            </div>
+            <div class="table-row">
+              <div class="left-cell">Birth Year :</div>
+              <div class="right-cell">1994</div>
+            </div>
+
+            <div class="table-row">
+              <div class="left-cell">Address :</div>
+              <div class="right-cell">Morocco, Fez</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="education" class="navigable education card hidden">
+        <div class="header">
+          Education
+        </div>
+        <div class="timeline">
+          <div class="event" data-date="2009-2012">
+            <div class="event-title">High School degree</div>
+            <div class="event-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, officia reiciendis neque, modi ipsa natus corrupti fuga
+              vitae autem eum minus enim consequatur amet earum.
+            </div>
+          </div>
+          <div class="event" data-date="2012-2017">
+            <div class="event-title">Bachelor degree</div>
+            <div class="event-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, officia reiciendis neque, modi ipsa natus corrupti fuga
+              vitae autem eum minus enim consequatur amet earum.
+            </div>
+          </div>
+          <div class="event" data-date="2017-present">
+            <div class="event-title">Master degree</div>
+            <div class="event-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, officia reiciendis neque, modi ipsa natus corrupti fuga
+              vitae autem eum minus enim consequatur amet earum.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/cv.js"></script>
+</body>
+
+</html>
