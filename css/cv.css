@@ -29,6 +29,11 @@
   font-weight: 300;
 }
 
+#blog {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
 .menu {
   height: 100%;
 }
