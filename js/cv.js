@@ -1,7 +1,7 @@
 setTimeout(() => {
   let child = document.getElementById('loadder')
   document.body.removeChild(child)
-}, 1000)
+}, 3000)
 
 const links = document.querySelectorAll('.menu-item')
 let showing = document.querySelector('.active')
