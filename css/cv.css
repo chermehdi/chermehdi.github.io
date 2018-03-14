@@ -44,6 +44,8 @@
   padding: 1.5rem 1rem;
   border-bottom: 1px solid  rgba(189, 189, 189, 0.303);
   width: 100%;
+  color: white;
+  font-size: 1.2rem;
   text-align: center;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
@@ -55,12 +57,6 @@
 
 .menu-container .menu-item.active {
   background-color: rgb(93, 109, 116);
-}
-
-.menu-container .menu-item a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
 }
 
 .profile {
@@ -161,7 +157,7 @@
 }
 .event::after {
   box-shadow: 0 0 0 8px #E64A19;
-  left: -30px;
+  left: -26px;
   background: #212121;
   border-radius: 50%;
   height: 11px;
