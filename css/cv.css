@@ -127,7 +127,9 @@
   padding: 1rem;
   padding-left: 10rem;
 }
-
+.navigable {
+  width: 100%;
+}
 .timeline {
   border-left: 8px solid #E64A19;
   border-bottom-right-radius: 2px;
@@ -185,4 +187,62 @@
   font-weight: 300;
   font-size: 1.1rem;
   padding-top: 1rem;
+}
+
+.technologies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.tech {
+  width: 200px;
+  height: 200px;
+}
+
+.tech .tech-img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+  0 1px 2px rgba(0,0,0,0.24);
+}
+.tech-img .tech-name {
+  position: absolute;
+  bottom: -30%;
+  left: 30%;
+}
+
+#java {
+  background: url(../img/tech/java.svg) center center no-repeat;
+  background-size: cover;
+}
+
+#javascript {
+  background: url(../img/tech/js.svg) center center no-repeat;
+  background-size: cover;
+}
+
+#vue {
+  background: url(../img/tech/vue.png) center center no-repeat;
+  background-size: cover;
+}
+
+#spring{
+  background: url(../img/tech/spring.png) center center no-repeat;
+  background-size: cover;
+}
+
+#react{
+  background: url(../img/tech/react.png) center center no-repeat;
+  background-size: cover;
+}
+
+#angular{
+  background: url(../img/tech/angular.png) center center no-repeat;
+  background-size: cover;
 }

@@ -29,7 +29,7 @@ body, html {
 }
 
 .showing {
-  transform: translateX(0px);
+  transform: translateX(5000px);
   position: absolute;
   animation-name: showCard;
   animation-fill-mode: forwards;
